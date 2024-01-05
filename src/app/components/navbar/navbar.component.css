@@ -1,0 +1,41 @@
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.container-fluid {
+  width: 90%;
+}
+.col-10 h2 {
+  margin: 0 8px 0 0;
+}
+::ng-deep.ant-menu-horizontal {
+  border-bottom: none;
+  background: transparent;
+}
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu {
+  padding: 0 10px;
+}
+.ant-menu-horizontal > .ant-menu-item::after,
+.ant-menu-horizontal > .ant-menu-submenu::after {
+  display: none;
+}
+.col-2 button {
+  background-color: var(--green);
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 15px;
+  border-radius: var(--button-radius);
+}
+.col-2 i {
+  font-size: var(--font-lg);
+}
+.nav_side {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}

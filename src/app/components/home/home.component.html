@@ -1,0 +1,20 @@
+<section>
+  <div class="container-fluid g-0">
+    <div class="row g-0">
+      <div class="col-3">
+        <sub>
+          <nz-card
+            *ngFor="let list of card; let i = index"
+            [ngClass]="selectedCard[i] === true ? ' selected_card' : 'ant-card1'"
+            (click)="selectCard(i)"
+          >
+            <img [src]="list.src" alt="" />
+            <p>{{ list.name }}</p>
+            <i nz-icon nzType="right" nzTheme="outline"></i>
+          </nz-card>
+        </sub>
+      </div>
+      <div class="col-9"></div>
+    </div>
+  </div>
+</section>

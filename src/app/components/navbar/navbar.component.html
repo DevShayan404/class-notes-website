@@ -1,0 +1,43 @@
+<nav>
+  <div class="container-fluid">
+    <div
+      class="row d-flex align-items-center pt-2 pb-2"
+      style="border: 1px solid red"
+    >
+      <!-- <div class="col-2">
+        <h2>ClassNotes</h2>
+      </div> -->
+      <div class="col-10 d-flex align-items-center">
+        <h2>ClassNotes</h2>
+        <ul nz-menu nzMode="horizontal">
+          <li nz-menu-item nzSelected>Navigation One</li>
+          <li nz-submenu nzTitle="Navigation Three - Submenu">
+            <ul>
+              <li nz-menu-group>
+                <ul>
+                  <li nz-menu-item>Option 3</li>
+                  <li nz-menu-item>Option 4</li>
+                  <li nz-submenu nzTitle="Sub Menu">
+                    <ul>
+                      <li nz-menu-item>Option 5</li>
+                      <li nz-menu-item>Option 6</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="col-2 d-flex justify-content-end">
+        <div class="nav_side">
+          <i nz-icon nzType="search" nzTheme="outline"></i>
+          <button routerLink="authentication/sign-up">
+            <i nz-icon nzType="user" nzTheme="outline"></i>
+            Sign In
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

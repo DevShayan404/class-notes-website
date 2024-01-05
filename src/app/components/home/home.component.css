@@ -1,0 +1,65 @@
+section:nth-child(1) {
+  height: 100vh;
+  background: var(--bg-black);
+  background: var(--bg-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%; */
+}
+.container-fluid {
+  width: 90%;
+}
+.col-3 sub {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.ant-card1 {
+  width: 90%;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  border: 1px solid #b3b3b3;
+  color: #b3b3b3;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.selected_card {
+  width: 90%;
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  border: 1px solid var(--white);
+  color: #5a5b75;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  font-weight: var(--weight-bolder);
+}
+.ant-card1:hover {
+  border-color: var(--white);
+  color: var(--white);
+}
+::ng-deep.ant-card-body {
+  padding: 12px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+/* .card_inner_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+} */
+::ng-deep.ant-card-body img {
+  width: 50px;
+  height: 50px;
+  border-radius: 0.8rem;
+}
+::ng-deep.ant-card-body p {
+  margin: 0;
+}
+::ng-deep.ant-card-body i {
+  font-size: var(--font-xsm);
+}
