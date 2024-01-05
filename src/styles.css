@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* color: var(--white); */
 }
 ::ng-deep p {
   margin: 0;
@@ -10,13 +9,14 @@
 :root {
   --white: #fffaf0;
   --bg-gradient: linear-gradient(
-    278deg,
-    rgba(20, 20, 20, 1) 65%,
-    rgba(55, 55, 55, 1) 87%,
-    rgba(87, 87, 87, 1) 100%
+    47deg,
+    rgba(221, 218, 252, 1) 0%,
+    rgba(179, 174, 248, 1) 9%,
+    rgba(150, 143, 246, 1) 32%,
+    rgba(118, 109, 244, 1) 74%
   );
-  --bg-black: rgb(20, 20, 20);
-  --green: #009863;
+  --secondary: #16c995;
+  --primary: #766df4;
   --button-radius: 0.6rem;
   --font-xsm: 16px;
   --font-sm: 18px;

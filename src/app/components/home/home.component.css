@@ -1,6 +1,5 @@
 section:nth-child(1) {
   height: 100vh;
-  background: var(--bg-black);
   background: var(--bg-gradient);
   display: flex;
   align-items: center;
