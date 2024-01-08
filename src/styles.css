@@ -1,13 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-::ng-deep p {
-  margin: 0;
+  /* font-family: "Nunito", sans-serif; */
+  font-family: "Poppins", sans-serif;
 }
 :root {
-  --white: #fffaf0;
+  --white: #fff;
   --bg-gradient: linear-gradient(
     47deg,
     rgba(118, 109, 244, 1) 0%,
@@ -18,6 +19,7 @@
   );
   --secondary: #16c995;
   --primary: #766df4;
+  --font-black:#5a5b75;
   --button-radius: 0.6rem;
   --font-xsm: 16px;
   --font-sm: 18px;

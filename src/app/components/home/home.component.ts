@@ -19,6 +19,10 @@ export class HomeComponent implements OnInit {
       name: 'Search What You are Looking For',
       src: 'assets/images/contentthumbnail1.png',
     },
+    {
+      name: 'Search What You are Looking For',
+      src: 'assets/images/contentthumbnail1.png',
+    },
   ];
 
   constructor() {

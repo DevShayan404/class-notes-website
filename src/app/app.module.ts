@@ -16,6 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgZorroModule } from './library-module/ng-zorro/ng-zorro.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
+import { OtherModuleModule } from './library-module/other-module/other-module.module';
 //
 
 registerLocaleData(en);
@@ -29,6 +30,7 @@ registerLocaleData(en);
     HttpClientModule,
     BrowserAnimationsModule,
     NgZorroModule,
+    OtherModuleModule,
   ],
   providers: [provideClientHydration(), { provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent],

@@ -1,6 +1,14 @@
+p {
+  margin: 0;
+}
 section:nth-child(1) {
   height: 100vh;
-  background: var(--bg-gradient);
+  width: 100%;
+  /* background: var(--bg-gradient); */
+  background-image: url("../../../assets/images/blurry-gradient-haikei.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,22 +18,26 @@ section:nth-child(1) {
 .container-fluid {
   width: 90%;
 }
+.banner_img img {
+  width: 100%;
+}
 .col-3 sub {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 .ant-card1 {
-  width: 90%;
+  width: 100%;
   background-color: transparent;
   border-radius: 0.5rem;
   border: 1px solid #b3b3b3;
-  color: #b3b3b3;
-  transition: 0.3s ease-in-out;
+  color: var(--white);
+  opacity: 0.7;
+  transition: 0.2s ease-in-out;
   cursor: pointer;
 }
 .selected_card {
-  width: 90%;
+  width: 100%;
   background-color: var(--white);
   border-radius: 0.5rem;
   border: 1px solid var(--white);
@@ -36,7 +48,7 @@ section:nth-child(1) {
 }
 .ant-card1:hover {
   border-color: var(--white);
-  color: var(--white);
+  opacity: 1;
 }
 ::ng-deep.ant-card-body {
   padding: 12px 8px;
@@ -62,3 +74,48 @@ section:nth-child(1) {
 ::ng-deep.ant-card-body i {
   font-size: var(--font-xsm);
 }
+.banner_content {
+  color: var(--white);
+}
+::ng-deep.banner_content strong {
+  font-size: 34px;
+  font-weight: 600;
+}
+.banner_content p {
+  font-size: var(--font-sm);
+  text-align: justify;
+}
+.banner_content form {
+  width: 100%;
+  margin-top: 60px;
+}
+.banner_content form input {
+  width: 100%;
+  border: none;
+  border-radius: var(--button-radius);
+  padding: 10px;
+  outline: none;
+  color: var(--font-black);
+}
+.banner_content ul {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 15px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+.banner_content ul li span {
+  opacity: 0.7;
+}
+.banner_content ul li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.banner_content ul li a {
+  border-bottom: 1px solid var(--white);
+  border-top: 0;
+}
+/* /////////////////////////////////////////Second Section//////////////////////////////////////////////////////////////////////// */
+

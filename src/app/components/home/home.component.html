@@ -1,11 +1,13 @@
 <section>
   <div class="container-fluid g-0">
     <div class="row g-0">
-      <div class="col-3">
+      <div class="col-3 me-3">
         <sub>
           <nz-card
             *ngFor="let list of card; let i = index"
-            [ngClass]="selectedCard[i] === true ? ' selected_card' : 'ant-card1'"
+            [ngClass]="
+              selectedCard[i] === true ? ' selected_card' : 'ant-card1'
+            "
             (click)="selectCard(i)"
           >
             <img [src]="list.src" alt="" />
@@ -14,7 +16,48 @@
           </nz-card>
         </sub>
       </div>
-      <div class="col-9"></div>
+      <div class="col-8 ms-5">
+        <div class="row">
+          <div class="col-7 d-flex flex-column banner_content">
+            <div>
+              <strong>Ace Your</strong>
+              <div class="banner_typewritter_effect" style="min-height: 9vh">
+                <ngx-typed-writer
+                  [strings]="[
+                    ' <strong> Lorem, ipsum dolor </strong>',
+                    ' <strong>HTML</strong> '
+                  ]"
+                  [showCursor]="false"
+                  [isHTML]="true"
+                  [smartBackspace]="false"
+                  [backSpeed]="30"
+                  [typeSpeed]="30"
+                  style="font-size: 24px"
+                ></ngx-typed-writer>
+              </div>
+              <p>
+                We have the largest database of questions, flashcards, and notes
+                to help your exams, Search your queries here
+              </p>
+            </div>
+            <div>
+              <form>
+                <input placeholder="Search your queries here..." type="text" />
+              </form>
+
+              <ul>
+                <li><span>Suggestions :</span></li>
+                <li><a>Matrices & Determinants</a> <a>Kinematics</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-5 banner_img">
+            <img src="assets\images\content.png" />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+
+<section style="border: 1px solid red; height: 100vh"></section>
